@@ -1,0 +1,15 @@
+Library assets included in V2:
+- Sepia Classical Sculptor’s Studio Studies.png -> assets/sculptors-studio-study.webp
+- Vintage Sepia Figure Study Sheet.png -> assets/vintage-sepia-figure-study.webp
+- Graphite Couple Figure Study Sheet.png -> assets/graphite-couple-study.webp
+- Classical Male Anatomy Study Sheet.png -> assets/male-anatomy-study.webp
+- Classical Life Drawing Study Sheet.png -> assets/classical-life-drawing.webp
+- Sepia Renaissance Figure Study Collage(1).png -> assets/renaissance-figure-study.webp
+- Antique Sepia Classical Figure Study.png -> assets/antique-sepia-study.webp
+- Sepia Classical Figure Study Collage(4).png -> assets/classical-figure-collage.webp
+- Vintage Graphite Figure Study Sheet.png -> assets/vintage-graphite-study.webp
+- Sepia Classical Figure Study Sheet.png -> assets/classical-male-study.webp
+
+All source originals remain in the user's Library. The webp copies in this project are resized/optimized delivery versions.
+- Vintage Graphite Figure Study Collage.png -> assets/vintage-graphite-collage.webp
+- Sepia Figure Study Collage(1).png -> assets/sepia-figure-collage.webp
