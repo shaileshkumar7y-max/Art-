@@ -1,230 +1,57 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#171512">
-  <meta name="description" content="A curated digital archive of classical figure studies, anatomy, gesture and fine-art illustration.">
-  <meta name="color-scheme" content="dark">
-  <title>NUDE ART STUDIO — The Figure Study Archive</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#151311"><meta name="description" content="A curated fine-art gallery of classical figure studies, graphite drawings, portraits and movement studies.">
+<title>NUDE ART STUDIO — Art, Form & Expression</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#archive">Skip to the artwork archive</a>
-
-  <section class="age-gate" id="ageGate" aria-labelledby="gateTitle" role="dialog" aria-modal="true">
-    <div class="gate-panel">
-      <div class="brand brand-center"><span class="brand-symbol">N<span>·</span>A</span><span class="brand-copy">NUDE ART STUDIO<small>THE FIGURE STUDY ARCHIVE</small></span></div>
-      <div class="gate-rule"></div>
-      <p class="eyebrow">A FINE-ART & EDUCATIONAL COLLECTION</p>
-      <h1 id="gateTitle">The human form,<br><em>studied with intention.</em></h1>
-      <p class="gate-description">This archive contains artistic figure studies and non-explicit depictions of adult human anatomy. It is intended for adults and presented in an educational, art-led context.</p>
-      <button class="button button-gold gate-enter" id="enterGallery">I am 18 or older — Enter archive <span>↗</span></button>
-      <button class="gate-leave" id="leaveGallery">Leave this page</button>
-      <p class="gate-note">This is an age reminder, not identity or age verification.</p>
-    </div>
-  </section>
-
-  <header class="header">
-    <a class="brand" href="#home" aria-label="Nude Art Studio home">
-      <span class="brand-symbol">N<span>·</span>A</span>
-      <span class="brand-copy">NUDE ART STUDIO<small>THE FIGURE STUDY ARCHIVE</small></span>
-    </a>
-    <nav class="nav" id="mainNav" aria-label="Main navigation">
-      <a href="#archive">The archive</a>
-      <a href="#curatorial-note">Our approach</a>
-      <a href="#about">About</a>
-    </nav>
-    <div class="header-actions">
-      <button class="saved-shortcut" id="showSaved" type="button" aria-label="Show saved artworks">Saved <span id="savedCount">0</span></button>
-      <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation"><span></span><span></span></button>
-    </div>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dash"></span> FORM · GESTURE · PROPORTION</p>
-        <h1>Art begins<br>with the <em>human form.</em></h1>
-        <p class="hero-lede">A considered visual archive of figure drawing, classical studies and the quiet language of line, balance and movement.</p>
-        <div class="hero-actions">
-          <a class="button button-gold" href="#archive">Explore the collection <span>↓</span></a>
-          <a class="text-link" href="#curatorial-note">Read our approach <span>↗</span></a>
-        </div>
-        <div class="hero-foot"><span class="status-dot"></span> CURATED DIGITAL STUDIES <span class="hero-foot-divider">/</span> VOL. 01</div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-image-wrap">
-          <img src="assets/sculptors-studio-study.webp" alt="Sepia-toned classical figure-study illustration sheet" fetchpriority="high">
-          <div class="hero-image-shade"></div>
-          <div class="hero-image-label"><span>FEATURED STUDY</span><strong>At the sculptor’s studio</strong><small>PLATE Nº 07 · SEPIA SERIES</small></div>
-        </div>
-        <div class="hero-side-note">OBSERVATION<br>WITHOUT OBJECTIFICATION</div>
-        <span class="hero-index">01 <i>/</i> 12</span>
-      </div>
-    </section>
-
-    <section class="principles-strip" aria-label="Collection themes">
-      <span>THE STUDY OF FORM</span><i>✳</i><span>CLASSICAL PROPORTION</span><i>✳</i><span>GESTURE & MOVEMENT</span><i>✳</i><span>ARTISTIC CONTEXT</span>
-    </section>
-
-    <section class="archive section-shell" id="archive">
-      <div class="section-intro">
-        <div>
-          <p class="eyebrow">THE COLLECTION — VOLUME 01</p>
-          <h2>Studies in <em>form.</em></h2>
-        </div>
-        <p class="section-description">Twelve selected plates from the visual archive. Explore by subject, medium or study tradition.</p>
-      </div>
-
-      <div class="archive-controls">
-        <div class="filter-list" role="group" aria-label="Filter artworks">
-          <button class="filter-chip is-active" type="button" data-filter="all">All works <span>12</span></button>
-          <button class="filter-chip" type="button" data-filter="female">Figure studies</button>
-          <button class="filter-chip" type="button" data-filter="male">Anatomy</button>
-          <button class="filter-chip" type="button" data-filter="pair">Duet studies</button>
-          <button class="filter-chip" type="button" data-filter="classical">Classical</button>
-        </div>
-        <div class="search-sort">
-          <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search the archive" autocomplete="off" aria-label="Search artworks"></label>
-          <label class="sort-box"><span class="sr-only">Sort artworks</span><select id="sortSelect"><option value="curated">Curated order</option><option value="az">Title A–Z</option><option value="za">Title Z–A</option></select></label>
-        </div>
-      </div>
-
-      <div class="archive-status"><p id="resultLabel">Showing all 10 studies</p><button id="clearFilters" class="clear-filters" type="button">Clear filters <span>×</span></button></div>
-      <div class="art-grid" id="artGrid" aria-live="polite">
-        <article class="art-card art-card-feature" data-title="At the Sculptor's Studio" data-category="classical pair" data-tags="classical pair sepia renaissance gesture">
-          <button class="art-trigger" type="button" data-art="0" aria-label="Open At the Sculptor's Studio artwork">
-            <span class="art-image"><img src="assets/sculptors-studio-study.webp" alt="Classical sepia studio study with several figure poses" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 01 <i>·</i> SEPIA</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>At the Sculptor’s Studio</strong><small>Classical studies · Sepia plate</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="0" aria-label="Save At the Sculptor's Studio">♡</button>
-          <span class="featured-tag">FEATURED PLATE</span>
-        </article>
-
-        <article class="art-card" data-title="Quiet Lines, Living Form" data-category="female classical" data-tags="female classical sepia gesture portrait">
-          <button class="art-trigger" type="button" data-art="1" aria-label="Open Quiet Lines, Living Form artwork">
-            <span class="art-image"><img src="assets/vintage-sepia-figure-study.webp" alt="Vintage sepia figure drawing study with pose and portrait sketches" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 02 <i>·</i> SEPIA</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>Quiet Lines, Living Form</strong><small>Figure studies · Sepia series</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="1" aria-label="Save Quiet Lines, Living Form">♡</button>
-        </article>
-
-        <article class="art-card" data-title="The Study of Two Forms" data-category="pair classical" data-tags="pair classical graphite proportion">
-          <button class="art-trigger" type="button" data-art="2" aria-label="Open The Study of Two Forms artwork">
-            <span class="art-image"><img src="assets/graphite-couple-study.webp" alt="Graphite couple figure study with standing poses and portrait details" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 03 <i>·</i> GRAPHITE</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>The Study of Two Forms</strong><small>Duet studies · Graphite</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="2" aria-label="Save The Study of Two Forms">♡</button>
-        </article>
-
-        <article class="art-card" data-title="Anatomy in Balance" data-category="male classical" data-tags="male anatomy classical proportion graphite">
-          <button class="art-trigger" type="button" data-art="3" aria-label="Open Anatomy in Balance artwork">
-            <span class="art-image"><img src="assets/male-anatomy-study.webp" alt="Classical male anatomy reference sheet with standing poses and gesture studies" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 04 <i>·</i> ANATOMY</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>Anatomy in Balance</strong><small>Proportion · Anatomy plate</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="3" aria-label="Save Anatomy in Balance">♡</button>
-        </article>
-
-        <article class="art-card" data-title="The Life Drawing Room" data-category="female male classical" data-tags="female male classical gesture life drawing">
-          <button class="art-trigger" type="button" data-art="4" aria-label="Open The Life Drawing Room artwork">
-            <span class="art-image"><img src="assets/classical-life-drawing.webp" alt="Classical life drawing plate showing multiple figure-study poses" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 05 <i>·</i> LIFE DRAWING</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>The Life Drawing Room</strong><small>Gesture studies · Classical</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="4" aria-label="Save The Life Drawing Room">♡</button>
-        </article>
-
-        <article class="art-card" data-title="A Renaissance Gesture" data-category="female male pair classical" data-tags="female male pair classical renaissance gesture">
-          <button class="art-trigger" type="button" data-art="5" aria-label="Open A Renaissance Gesture artwork">
-            <span class="art-image"><img src="assets/renaissance-figure-study.webp" alt="Renaissance-inspired figure study collage in sepia" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 06 <i>·</i> RENAISSANCE</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>A Renaissance Gesture</strong><small>Classical composition · Sepia</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="5" aria-label="Save A Renaissance Gesture">♡</button>
-        </article>
-
-        <article class="art-card" data-title="Antique Proportions" data-category="male female classical" data-tags="male female classical proportion sepia">
-          <button class="art-trigger" type="button" data-art="6" aria-label="Open Antique Proportions artwork">
-            <span class="art-image"><img src="assets/antique-sepia-study.webp" alt="Antique sepia figure study with body proportions and portrait sketches" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 07 <i>·</i> ANTIQUE</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>Antique Proportions</strong><small>Form & proportion · Sepia</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="6" aria-label="Save Antique Proportions">♡</button>
-        </article>
-
-        <article class="art-card" data-title="The Classical Figure Collage" data-category="female classical" data-tags="female classical sepia portrait gesture">
-          <button class="art-trigger" type="button" data-art="7" aria-label="Open The Classical Figure Collage artwork">
-            <span class="art-image"><img src="assets/classical-figure-collage.webp" alt="Classical figure drawing collage with a central pose and smaller studies" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 08 <i>·</i> CLASSICAL</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>The Classical Figure Collage</strong><small>Figure studies · Sepia</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="7" aria-label="Save The Classical Figure Collage">♡</button>
-        </article>
-
-        <article class="art-card" data-title="Portraits & Gesture" data-category="female male classical" data-tags="female male graphite portrait gesture">
-          <button class="art-trigger" type="button" data-art="8" aria-label="Open Portraits and Gesture artwork">
-            <span class="art-image"><img src="assets/vintage-graphite-study.webp" alt="Vintage graphite sheet of figure poses, portraits and hand studies" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 09 <i>·</i> GRAPHITE</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>Portraits & Gesture</strong><small>Graphite · Expression studies</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="8" aria-label="Save Portraits and Gesture">♡</button>
-        </article>
-
-        <article class="art-card" data-title="Classical Male Figure Studies" data-category="male anatomy classical" data-tags="male anatomy classical proportion sepia">
-          <button class="art-trigger" type="button" data-art="9" aria-label="Open Classical Male Figure Studies artwork">
-            <span class="art-image"><img src="assets/classical-male-study.webp" alt="Sepia classical figure study sheet showing male figure poses and anatomy" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 10 <i>·</i> FIGURE STUDY</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>Classical Male Figure Studies</strong><small>Figure study · Proportion</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="9" aria-label="Save Classical Male Figure Studies">♡</button>
-        </article>
-
-        <article class="art-card" data-title="Gesture in Graphite" data-category="female male classical" data-tags="female male graphite gesture portrait figure">
-          <button class="art-trigger" type="button" data-art="10" aria-label="Open Gesture in Graphite artwork">
-            <span class="art-image"><img src="assets/vintage-graphite-collage.webp" alt="Graphite figure study collage with standing poses, portraits and gesture details" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 11 <i>·</i> GRAPHITE</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>Gesture in Graphite</strong><small>Pose & portrait studies · Graphite</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="10" aria-label="Save Gesture in Graphite">♡</button>
-        </article>
-
-        <article class="art-card" data-title="A Figure in Contour" data-category="female classical" data-tags="female classical sepia contour gesture portrait">
-          <button class="art-trigger" type="button" data-art="11" aria-label="Open A Figure in Contour artwork">
-            <span class="art-image"><img src="assets/sepia-figure-collage.webp" alt="Sepia figure study with contour poses, portrait sketches and anatomical gestures" loading="lazy"><span class="image-overlay"></span><span class="plate-label">PLATE 12 <i>·</i> CONTOUR</span><span class="open-mark">↗</span></span>
-            <span class="art-caption"><span><strong>A Figure in Contour</strong><small>Contour & gesture · Sepia</small></span><span class="caption-arrow">↗</span></span>
-          </button>
-          <button class="save-art" type="button" data-save="11" aria-label="Save A Figure in Contour">♡</button>
-        </article>
-      </div>
-      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No matching studies</h3><p>Try another title or clear the current filters.</p><button class="button button-outline" id="emptyReset">Reset archive</button></div>
-    </section>
-
-    <section class="curatorial" id="curatorial-note">
-      <div class="curatorial-number">02 <span>/</span> OUR APPROACH</div>
-      <div class="curatorial-main"><p class="eyebrow">A RESPECTFUL POINT OF VIEW</p><h2>Observe the form.<br><em>Respect the subject.</em></h2><p>Figure study is a language of line, proportion, posture and expression. This archive treats the human body as a subject of artistic observation—not as an invitation to objectify.</p></div>
-      <blockquote>“The gesture is brief.<br>The study asks us to look closer.”<small>THE STUDIO NOTEBOOK</small></blockquote>
-    </section>
-
-    <section class="about-band" id="about">
-      <div><p class="eyebrow">ABOUT THE ARCHIVE</p><h2>A digital cabinet<br>of <em>figure studies.</em></h2></div>
-      <p>This first volume brings together digital classical and graphite-inspired study plates sourced from the available image library. Artwork descriptions are editorial labels, not claims of historical provenance. Before public release, confirm image rights, adult subject status and any required permissions.</p>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <a class="brand" href="#home"><span class="brand-symbol">N<span>·</span>A</span><span class="brand-copy">NUDE ART STUDIO<small>THE FIGURE STUDY ARCHIVE</small></span></a>
-    <p>Artistic context · Respectful presentation · Adult audience</p>
-    <div class="footer-links"><a href="#archive">Archive</a><a href="#curatorial-note">Our approach</a><span>© <span id="year">2026</span> NAS</span></div>
-  </footer>
-
-  <div class="viewer" id="viewer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Artwork viewer">
-    <button class="viewer-close" id="viewerClose" type="button" aria-label="Close artwork viewer">×</button>
-    <button class="viewer-nav viewer-prev" id="viewerPrev" type="button" aria-label="Previous artwork">‹</button>
-    <div class="viewer-layout">
-      <div class="viewer-image-stage"><img id="viewerImage" src="" alt=""></div>
-      <aside class="viewer-info"><p class="eyebrow" id="viewerPlate">PLATE 01 / ARCHIVE</p><h2 id="viewerTitle"></h2><p id="viewerDescription"></p><div class="viewer-tags" id="viewerTags"></div><button class="button button-gold viewer-save" id="viewerSave" type="button">♡ Save this study</button><p class="viewer-counter" id="viewerCounter">01 / 10</p></aside>
-    </div>
-    <button class="viewer-nav viewer-next" id="viewerNext" type="button" aria-label="Next artwork">›</button>
+<div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+  <div class="gate-panel"><div class="brand-mark">NAS<span>•</span></div><p class="eyebrow">THE ART OF FORM & EXPRESSION</p>
+    <h1 id="ageTitle">Step into<br><em>the art archive.</em></h1>
+    <p>This gallery contains mature fine-art figure studies and historical-style artwork. It is intended for adults and presented in an artistic and educational context.</p>
+    <button class="btn btn-gold" id="enterSite">I am 18 or older · Enter gallery <span>↗</span></button>
+    <button class="btn-quiet" id="leaveSite">Leave gallery</button>
+    <small>Age reminder only — this screen does not verify identity or age.</small>
   </div>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
-</body>
-</html>
+</div>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Nude Art Studio home"><span class="brand-symbol">N<span>•</span>A</span><span class="brand-text">NUDE ART STUDIO<small>ART · FORM · EXPRESSION</small></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="main-nav" id="mainNav"><a href="#collections">Collections</a><a href="#all-artworks">All artwork</a><a href="#saved">Saved</a><a href="#recent">Recent</a><a href="#about">About</a></nav>
+  <button class="nav-search" id="focusSearch">⌕ <span>Search</span></button>
+</header>
+<main id="home">
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow"><i></i> A CURATED VISUAL ARCHIVE</p><h1>Art, form<br>& <em>expression.</em></h1>
+      <p class="hero-lede">Explore classical figure studies, timeless portraits, graphite sketches and artistic movement — all in one carefully curated gallery.</p>
+      <div class="hero-buttons"><a class="btn btn-gold" href="#collections">Explore collections <span>↘</span></a><button class="btn btn-outline" id="surpriseBtn">Surprise me <span>✦</span></button></div>
+      <div class="hero-meta"><span><b id="artCount">40</b> SELECTED ARTWORKS</span><span><b id="collectionCount">09</b> COLLECTIONS</span><span>CURATED ARCHIVE</span></div>
+    </div>
+    <div class="hero-visual" aria-label="Featured classical artwork"><div class="hero-frame"><img id="heroImage" src="assets/full/artwork-01.webp" alt="Featured classical fine-art figure study"><div class="hero-caption"><span>FEATURED FROM THE ARCHIVE</span><strong id="heroTitle">Antique Sepia Figure Study</strong></div></div><div class="hero-side-note">COLLECTION Nº 001 <span>✳</span></div></div>
+  </section>
+  <section class="quick-strip"><span>FIND YOUR INTEREST</span><button data-quick="figure">Figure studies</button><button data-quick="graphite">Graphite</button><button data-quick="anatomy">Anatomy</button><button data-quick="classical">Classical</button><button data-quick="editorial">Editorial</button></section>
+  <section class="section collection-section" id="collections">
+    <div class="section-head"><div><p class="eyebrow">BROWSE BY COLLECTION</p><h2>Explore the <em>collections.</em></h2></div><p>Choose a collection to see the artworks, styles and studies inside it.</p></div>
+    <div class="collection-grid" id="collectionGrid"></div>
+  </section>
+  <section class="section discover-section" id="all-artworks">
+    <div class="section-head"><div><p class="eyebrow">THE COMPLETE ARCHIVE</p><h2 id="galleryHeading">All <em>artworks.</em></h2></div><p id="galleryIntro">Search, filter and discover something new.</p></div>
+    <div class="toolbar"><label class="search-box"><span>⌕</span><input type="search" id="searchInput" placeholder="Search artworks, styles or collections…" autocomplete="off"><kbd>/</kbd></label>
+      <div class="toolbar-controls"><select id="collectionFilter" aria-label="Filter by collection"><option value="all">All collections</option></select><select id="sortSelect" aria-label="Sort artworks"><option value="featured">Featured first</option><option value="az">Title A–Z</option><option value="za">Title Z–A</option></select><button class="view-toggle active" id="gridView" aria-label="Grid view">▦</button><button class="view-toggle" id="listView" aria-label="List view">☷</button></div>
+    </div>
+    <div class="filter-row" id="filterRow"><span>STYLE</span><button class="chip active" data-style="all">All</button><button class="chip" data-style="Classic">Classic</button><button class="chip" data-style="Quiet">Graphite</button><button class="chip" data-style="Study">Study</button><button class="chip" data-style="Editorial">Editorial</button></div>
+    <div class="result-line"><span id="resultCount">All artworks</span><button class="clear-filters" id="clearFilters">Clear filters ×</button></div>
+    <div class="art-grid" id="artGrid"></div><p class="empty-state" id="emptyState" hidden>No artworks found. Try changing your search or filters.</p>
+    <button class="load-more" id="loadMore">Load more artworks <span>↓</span></button>
+  </section>
+  <section class="saved-section section" id="saved"><div class="section-head"><div><p class="eyebrow">YOUR PERSONAL SHORTLIST</p><h2>Saved <em>artworks.</em></h2></div><p>Your favorites stay on this device.</p></div><div class="saved-grid" id="savedGrid"></div><p class="saved-empty" id="savedEmpty">You haven't saved anything yet. Tap the heart on an artwork to keep it here.</p></section>
+  <section class="recent-section section" id="recent"><div class="section-head"><div><p class="eyebrow">PICK UP WHERE YOU LEFT OFF</p><h2>Recently <em>viewed.</em></h2></div><p>Your latest viewed works stay on this device.</p></div><div class="saved-grid" id="recentGrid"></div><p class="saved-empty" id="recentEmpty">Your recently viewed artworks will appear here.</p></section>
+  <section class="about-section" id="about"><div class="about-number">NAS / 2026</div><div><p class="eyebrow">A NOTE FROM THE STUDIO</p><h2>Look closer.<br><em>See differently.</em></h2><p>This archive brings together artistic figure studies, educational drawing references, portraits and classical-inspired imagery. Every collection is organised around art, context and visual expression.</p></div><div class="about-quote">“A thoughtful study of shape, movement and light.”<small>THE STUDIO NOTEBOOK</small></div></section>
+</main>
+<footer class="footer"><a class="brand" href="#home"><span class="brand-symbol">N<span>•</span>A</span><span class="brand-text">NUDE ART STUDIO<small>ART · FORM · EXPRESSION</small></span></a><p>Curated for artistic and educational appreciation.</p><div><a href="#collections">Collections</a><a href="#all-artworks">Archive</a><a href="#about">About</a></div><small class="footer-note">Artwork rights and permissions should be verified before public publishing. Some works contain mature artistic figure imagery.</small></footer>
+<nav class="mobile-bottom"><a href="#home"><span>⌂</span>Home</a><a href="#collections"><span>▦</span>Collections</a><a href="#all-artworks"><span>⌕</span>Search</a><a href="#saved"><span>♡</span>Saved</a><a href="#recent"><span>◷</span>Recent</a></nav>
+<div class="viewer" id="viewer" aria-hidden="true"><button class="viewer-close" id="viewerClose" aria-label="Close viewer">×</button><button class="viewer-arrow viewer-prev" id="viewerPrev" aria-label="Previous artwork">‹</button><div class="viewer-stage" id="viewerStage"><img id="viewerImage" alt=""><button class="zoom-button" id="zoomButton">Zoom +</button></div><button class="viewer-arrow viewer-next" id="viewerNext" aria-label="Next artwork">›</button><aside class="viewer-info"><p class="eyebrow" id="viewerCollection">COLLECTION</p><h2 id="viewerTitle"></h2><p id="viewerDescription"></p><p class="viewer-medium" id="viewerMedium"></p><div class="viewer-actions"><button class="btn btn-gold" id="viewerSave">♡ Save artwork</button><button class="btn btn-outline" id="viewerShare">↗ Share</button></div><span class="viewer-counter" id="viewerCounter"></span></aside></div>
+<script src="data.js"></script><script src="collections.js"></script><script src="app.js"></script>
+</body></html>
