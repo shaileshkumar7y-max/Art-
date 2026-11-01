@@ -1,0 +1,20 @@
+NUDE ART STUDIO — V3 IMAGE FIX PATCH
+
+THIS IS AN INCREMENTAL PATCH ONLY.
+It contains replacement/new CODE files only. It intentionally contains NO artwork image files and NO assets/thumbs or assets/full folders.
+
+UPLOAD INSTRUCTIONS
+1. Extract this ZIP.
+2. Open your existing Nude-Art-Studio GitHub repository.
+3. Upload the patch contents to the SAME repository root (same level as index.html).
+4. Choose overwrite/replace for: index.html, app.js, style.css, data.js, collections.js.
+5. Add the new .nojekyll and image-check.html files.
+6. DO NOT delete or move the existing assets/ folder. The website expects the previous image files to remain at:
+   assets/thumbs/artwork-01.webp ... artwork-47.webp
+   assets/full/artwork-01.webp ... artwork-47.webp
+7. Open https://YOUR-USERNAME.github.io/Nude-Art-Studio/image-check.html
+   It checks all 47 old image references and clearly reports if files are missing.
+8. Hard refresh / clear browser cache after GitHub Pages finishes deploying.
+
+IMPORTANT
+If image-check.html reports missing images, the old assets folder was not uploaded or is nested in the wrong directory. Because you specifically asked not to receive old images again, this patch does not duplicate them. Keep the already-uploaded assets/ folder in the repository; if it is absent, the images themselves must be uploaded once from your earlier V3 package.
